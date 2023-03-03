@@ -186,4 +186,7 @@ const select = (el, all = false) => {
     $('html, body').animate({
         scrollTop: topData.top -80
     }, 'smooth');
+
+    $('.navbar-collapse').collapse('hide');
+    
   });
