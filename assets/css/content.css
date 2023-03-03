@@ -1,0 +1,51 @@
+.primary-color{
+    color: var(--primary-color);
+}
+.secondary-color{
+    color: var(--secondary-color);
+}
+.primary-bg-color{
+    background-color: var(--primary-color);
+}
+.secondary-bg-color{
+    background-color: var(--secondary-color);
+}
+
+
+section {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+.section-bg {
+    background-color: #f7faff;
+  }
+  .section-title h2 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 8px 20px;
+    margin: 0;
+    background: #e7f1fd;
+    color: var(--primary-color);
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 50px;
+  }
+  .section-title h3 {
+    margin: 15px 0 0 0;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  
+  .section-title p {
+    margin: 15px auto 0 auto;
+    font-weight: 600;
+  }
+  .p-content{
+    margin: 15px auto 0 auto;
+    font-weight: 400;
+  }
+  .icon-border-dashed{
+     border: 1.5px dashed white;
+  }

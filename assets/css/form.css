@@ -1,0 +1,11 @@
+.form input,.form textarea {
+    outline: 0;
+
+    width: 100%;
+    border: 1px dashed var(--primary-color);
+    border-radius: 5px;
+    margin: 0 0 12px;
+    padding: 12px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
