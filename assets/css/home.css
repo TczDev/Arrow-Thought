@@ -1,0 +1,295 @@
+  /*--------------------------------------------------------------
+# Hero Section
+  background: url("../images/hero.jpg");
+    background-position: center;
+    background-size: cover;
+--------------------------------------------------------------*/
+
+#hero {
+    width: 100%;
+    height: 65vh;
+    background-size: cover;
+    position: relative;
+    background: var(--light-color);
+  }
+
+
+  #hero .container {
+    position: relative;
+    top:80px;
+  }
+  #hero h1 {
+    margin: 0;
+    font-size: 48px;
+    text-transform: none;
+    font-weight: 800;
+    margin: 0;
+    line-height: 1.2;
+  }
+  #hero h1 span {
+    color: #106eea;
+  }
+  #hero h2 {
+    color: #000000;
+   
+    font-size: 24px;
+    font-weight: 400;
+  }
+  #hero .btn-get-started {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 28px;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: #fff;
+    text-decoration: none;
+    background: var(--secondary-color);
+  }
+  #hero .btn-get-started:hover {
+    background: var(--primary-color);
+  }
+  #hero .btn-watch-video {
+    font-size: 16px;
+    transition: 0.5s;
+    margin-left: 25px;
+    color: #222222;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+  }
+  #hero .btn-watch-video i {
+    color: #106eea;
+    font-size: 32px;
+    transition: 0.3s;
+    line-height: 0;
+    margin-right: 8px;
+  }
+  #hero .btn-watch-video:hover {
+    color: #106eea;
+  }
+  #hero .btn-watch-video:hover i {
+    color: #3b8af2;
+  }
+
+  @media (max-width: 768px) {
+   
+    #hero h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+    #hero h2 {
+      font-size: 18px;
+      line-height: 36px;
+    }
+    #hero .btn-get-started, #hero .btn-watch-video {
+      font-size: 13px;
+    }
+  }
+  /*About Section*/
+  .about-border{
+    border-right: 2.5px dashed var(--primary-color);
+  }
+  /*Mobile*/
+  @media (max-width: 991px) {
+    .about-border{
+        border-right: none;
+      }
+      #hero{
+        height: 90vh;
+      }
+  }
+
+  /*###################################
+  Service section
+  ##############################*/
+  .services{
+    padding-top:80px !important ;
+    padding-bottom:80px !important;
+    
+
+  }
+  .services .card{
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    padding: 35px 25px 33px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+    overflow: hidden;
+    color:white;
+    
+  }
+  .services .card::before {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: "";
+    height: 50px;
+    width: 50px;
+    background: var(--primary-color);
+    border-radius: 0 0 5px 0;
+    z-index: -1;
+    transition: .5s;
+}
+.services .card:hover::before {
+    height: 100%;
+    width: 100%;
+
+}
+.services .card :hover{
+    color:white !important;
+}
+.services .card :hover .icon{
+
+    background: var(--secondary-color);
+    border-radius: 100% !important;
+    animation: flipInY 1.5s linear infinite;
+}
+
+  .services .card .icon {
+    color: #fff;
+    font-size: 30px;
+    line-height: 80px;
+    height: 80px;
+    width: 80px;
+    background: var(--primary-color);
+    border-radius: 33% 66% 70% 30%/49% 62% 38% 51% !important;
+    display: inline-block;
+}
+.services .card .card-title{
+    font-size: 22px;
+    padding-top: 12px;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+    -webkit-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    font-weight: 600;
+}
+
+.services .card .icon:hover {
+
+    background: var(--secondary-color);
+    border-radius: 100% !important;
+    
+ 
+}
+
+  /*###################################
+  About section
+  ##############################*/
+  .about{
+   padding-top: 0px;
+   padding-bottom: 40px;
+  }
+  .about .section-title-about h5{
+    letter-spacing: 0;
+    color: var(--primary-color);
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .about .section-title-about p{
+    font-size: 40px!important;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  .vision-section h5,.mission-section h5{
+    letter-spacing: 0;
+    color: var(--primary-color);
+    font-size: 28px;
+    position: relative;
+    z-index: 1;
+    font-weight: 600;
+  }
+
+  .vision-section p,.mission-section p{
+    font-size: 16px;
+    font-weight: 400;
+
+  }
+  .vision-section .icon,.mission-section .icon{
+    color: #fff;
+    font-size: 30px;
+    line-height: 80px;
+    height: 80px;
+    width: 80px;
+    background: var(--primary-color);
+    border-radius: 33% 66% 70% 30%/49% 62% 38% 51% !important;
+    display: inline-block;
+  }
+  .about .circle {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-size: 25px;
+    line-height: 60px;
+    z-index: 2;
+    display: inline-block;
+    
+  }
+  
+  .about .how-it-works.row .col-2 {
+    align-self: stretch;
+   
+  }
+ 
+  .about .timeline1 div {
+    padding: 0;
+    height: 40px;
+  }
+  .about .timeline1 hr {
+    border-top: 3px solid var(--secondary-color);
+    background-color:var(--secondary-color)!important;
+    margin: 0;
+    top: 17px;
+    position: relative;
+  }
+  .about .timeline1 .col-2 {
+    display: flex;
+    overflow: hidden;
+  }
+  .about .timeline1 .corner {
+    border: 3px solid var(--secondary-color);
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+   
+  }
+  .about .timeline1 .top-right {
+    left: 75%;
+    top: -50%;
+  }
+  .about .timeline1 .left-bottom {
+    left: -75%;
+    top: calc(50% - 3px);
+  }
+  .about .timeline1 .top-left {
+    left: -75%;
+    top: -50%;
+  }
+  .about .timeline1 .right-bottom {
+    left: 75%;
+    top: calc(50% - 3px);
+  }
+  /*#####################
+  contact
+  ################*/
+  .em-hero-inner-shape-contact img{
+    position: relative;
+  top:-25px;
+  left: 12px;
+  animation: moveLeftBounce 3s linear infinite;
+  
+  }
+
+
+  
+  
+ 

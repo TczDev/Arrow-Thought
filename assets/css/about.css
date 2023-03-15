@@ -1,0 +1,66 @@
+.about-hero{
+    
+    background:var(--light-color);
+    height: 45vh;
+}
+.about-hero h1{
+    font-weight: 700;
+}
+
+.about-hero p,.about-content p{
+   font-size: 18px;
+   text-align: justify;
+}
+.shape{
+    position:relative; 
+}
+.em-hero-inner-shape-contact-page{
+ position: absolute;
+ top:inherit;
+ left:50%;
+ bottom:-20px;
+ animation: rotating 15s linear infinite;
+}
+@keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+.about-content .mission-section,.about-content .vision-section{
+    border:1px dashed var(--primary-color);
+    border-radius:10px;
+    height: 100%;
+    padding: 10px;
+
+}
+.about-content .mission-section:hover,.about-content .vision-section:hover{
+
+    animation: wiggle 2s linear infinite;
+}
+@keyframes wiggle {
+    0%, 7% {
+        border:1px solid var(--secondary-color);
+    }
+    15% {
+        border:1px solid var(--secondary-color);
+    }
+    20% {
+        border:1px solid var(--secondary-color);
+    }
+    25% {
+        border:1px solid var(--secondary-color);
+    }
+    30% {
+        border:1px solid var(--secondary-color);
+    }
+    35% {
+        border:1px solid var(--secondary-color);
+    }
+    40%, 100% {
+        border:1px solid var(--secondary-color);
+    }
+  }
+  
